@@ -1,19 +1,12 @@
 name: CI
 
-# Controls when the workflow will run
 on:
-
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
   workflow_call:
     inputs:
       google: 
-      description: Teste de input em variável
-      required: true
-      type: string
       default: google_var
+  push:
+    branches: [ "main" ]
 
   workflow_dispatch:
  
