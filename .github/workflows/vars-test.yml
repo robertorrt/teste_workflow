@@ -1,10 +1,6 @@
 name: CI
 
 on:
-  workflow_call:
-    inputs:
-      google: 
-      default: google_var
   push:
     branches: [ "main" ]
 
